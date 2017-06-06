@@ -1,5 +1,5 @@
 import os
-from unittest import main, skipIf, TestCase
+from unittest import main, TestCase
 
 import numpy as np
 

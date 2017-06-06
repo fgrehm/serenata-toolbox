@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date
 from tempfile import mkdtemp
 from shutil import rmtree
-from unittest import main, skipIf, TestCase, TestLoader
+from unittest import main, TestCase
 
 from serenata_toolbox.chamber_of_deputies.chamber_of_deputies_dataset import ChamberOfDeputiesDataset
 
