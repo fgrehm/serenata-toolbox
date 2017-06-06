@@ -11,8 +11,6 @@ class TestSpeechesDataset(TestCase):
     def setUp(self):
         self.subject = SessionStartTimesDataset()
 
-    @skipIf(os.environ.get('RUN_INTEGRATION_TESTS') != '1',
-            'Skipping integration test')
     def test_fetch(self):
         pivot = 19
         df = self.subject.fetch(pivot, [

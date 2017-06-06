@@ -17,8 +17,6 @@ class TestPresencesDataset(TestCase):
         ])
         self.subject = PresencesDataset(sleep_interval=0)
 
-    @skipIf(os.environ.get('RUN_INTEGRATION_TESTS') != '1',
-            'Skipping integration test')
     def test_fetch(self):
         df = self.subject.fetch(self.deputies, '02/02/2015', '05/02/2015')
         actualColumns = df.columns
