@@ -6,14 +6,14 @@ from tempfile import mkdtemp
 from shutil import rmtree
 from unittest import main, TestCase
 
-from serenata_toolbox.chamber_of_deputies.chamber_of_deputies_dataset import ChamberOfDeputiesDataset
+from serenata_toolbox.chamber_of_deputies.dataset import Dataset
 
 class TestChamberOfDeputiesDataset(TestCase):
 
     def setUp(self):
         self.path = mkdtemp(prefix='serenata-')
         print(self.path)
-        self.subject = ChamberOfDeputiesDataset(self.path)
+        self.subject = Dataset(self.path)
         self.years = [n for n in range(2009, date.today().year + 1)]
 
 
